@@ -1,6 +1,6 @@
 # Guardian — Universal Unattended Automated Coding Workflow
 
-A complete overnight automated coding workflow with 10 professional AI Agents, 10-stage pipeline processes, and human final approval.
+A complete automated coding workflow with 10 professional AI Agents, 10-stage pipeline processes, and human final approval.
 
 ## Directory Structure
 

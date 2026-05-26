@@ -280,7 +280,7 @@ Production deployment commands
 
 ---
 
-## Stage 9: Morning Report
+## Stage 9: final Report
 
 **Purpose:** Synthesize all results, recommend human action, flag uncertainties.
 
@@ -290,7 +290,7 @@ Production deployment commands
 - Test results
 
 **Outputs:**
-- `.dream/morning-report.md`
+- `.dream/final-report.md`
   - Executive summary
   - Task objective (from task-card.md)
   - Actual work completed
@@ -319,7 +319,7 @@ Production deployment commands
 | Critical | Security (8) | ✅ YES | Flag & halt |
 | High | Security (8) | ✅ YES | Flag & halt |
 | Critical | Code Review (6) | ✅ YES | Flag & halt |
-| Major | Code Review (6) | ⚠️ REPORT | Include in morning report |
+| Major | Code Review (6) | ⚠️ REPORT | Include in final report |
 | Test Failure | Test (5) | ⚠️ AUTO-FIX | Max 2 rounds, then halt |
 | Performance High Risk | Perf (7) | ✅ YES | Flag & halt |
 
@@ -331,7 +331,7 @@ Production deployment commands
 
 **Fail-safe:** Every stage produces output; no silent failures.
 
-**Human in loop:** No auto-merge; engineer reviews morning report.
+**Human in loop:** No auto-merge; engineer reviews final report.
 
 **Transparency:** All decisions logged with evidence.
 

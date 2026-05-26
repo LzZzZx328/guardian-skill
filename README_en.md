@@ -153,7 +153,7 @@ opencode
 ### Stage 9: Verification Report
 - Synthesize all results
 - List unresolved issues, blockers
-- Generate morning-report.md
+- Generate final-report.md
 - Recommendation: "Recommend human review" or "Stop, reason: ..."
 
 ---
@@ -185,7 +185,7 @@ opencode
 ├── code-review.md            # Quality assessment
 ├── performance-review.md     # Performance & stability assessment
 ├── security-review.md        # Security review
-└── morning-report.md         # Comprehensive report and recommendations
+└── final-report.md         # Comprehensive report and recommendations
 ```
 
 ---
@@ -233,7 +233,7 @@ Constraints:
 3. No new dependencies;
 4. No modifications to .env, production configs, or secrets;
 5. Auto-fix test failures maximum 2 rounds;
-6. Must generate .guardian/morning-report.md at completion;
+6. Must generate .guardian/final-report.md at completion;
 7. If permission/data/device control risks involved, must stop and mark needs human confirmation.
 ```
 

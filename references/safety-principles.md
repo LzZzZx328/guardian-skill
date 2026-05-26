@@ -155,7 +155,7 @@ cat, ls (read-only)
 
 **Implementation:**
 - Every agent flags uncertain items in output
-- Morning report collects all items requiring human confirmation
+- final report collects all items requiring human confirmation
 - Engineer reviews these first
 
 **Rationale:** Prevents bugs from uncertain assumptions.
@@ -203,20 +203,20 @@ cat, ls (read-only)
 | Condition | Action |
 |-----------|--------|
 | Critical issue found | STOP, flag issue |
-| Major issue found | REPORT in morning report |
+| Major issue found | REPORT in final report |
 
 ### Performance (Stage 7)
 | Condition | Action |
 |-----------|--------|
 | High-risk regression | STOP, flag issue |
-| Medium risk | REPORT in morning report |
+| Medium risk | REPORT in final report |
 
 ### Security (Stage 8)
 | Condition | Action |
 |-----------|--------|
 | Critical issue (CVSS 9-10) | STOP immediately |
 | High issue (CVSS 7-8) | STOP immediately |
-| Medium/Low | REPORT in morning report |
+| Medium/Low | REPORT in final report |
 
 ---
 
@@ -254,7 +254,7 @@ cat, ls (read-only)
 - Database migrations
 - Environment config changes
 
-### Report in Morning (Continue)
+### Report in final (Continue)
 - Code Review Major
 - Performance Medium risk
 - Uncertain assumptions
@@ -281,7 +281,7 @@ Before recommending "ready for merge":
 - ✅ Code Review: no Critical issues (Stage 6)
 - ✅ Performance: no High risk (Stage 7)
 - ✅ Security: no Critical/High issues (Stage 8)
-- ✅ Morning Report: generated, uncertainties flagged
+- ✅ final Report: generated, uncertainties flagged
 - ✅ All 9 output files exist in `.dream/`
 
 If any ✅ is ❌, recommendation is:

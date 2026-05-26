@@ -48,7 +48,7 @@
 - ✅ Stage 6: Call @code-reviewer for code-review.md
 - ✅ Stage 7: Call @performance-checker for performance-review.md
 - ✅ Stage 8: Call @security-reviewer for security-review.md
-- ✅ Stage 9: Generate morning-report.md
+- ✅ Stage 9: Generate final-report.md
 
 **Stop Conditions:**
 - Working on main/master
@@ -70,7 +70,7 @@
 - code-review.md (via @code-reviewer)
 - performance-review.md (via @performance-checker)
 - security-review.md (via @security-reviewer)
-- morning-report.md
+- final-report.md
 
 **Temperature:** 0.1 (stable, deterministic)
 
@@ -413,7 +413,7 @@ guardian-runner (orchestrator)
 ├── calls @code-reviewer → code-review.md
 ├── calls @performance-checker → performance-review.md
 ├── calls @security-reviewer → security-review.md
-└── synthesizes all → morning-report.md
+└── synthesizes all → final-report.md
 ```
 
 ---

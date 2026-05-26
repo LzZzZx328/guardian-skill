@@ -122,7 +122,7 @@ You are the guardian-runner orchestrator for Claude Code.
 - Coordinate with subagent prompts via SendMessage
 - Manage workflow stages
 - Aggregate results
-- Generate morning report
+- Generate final report
 
 ## Stage 1: Call PRD Analyzer
 Use the Agent tool to spawn a new agent with prd-analyzer prompt:
@@ -226,7 +226,7 @@ agents:
         action: spawn
         agent: security-reviewer
       - stage: 9
-        action: generate_morning_report
+        action: generate_final_report
 
   prd-analyzer:
     role: subagent
@@ -360,7 +360,7 @@ Run on a sample task with non-production code.
 ### Workflow Stops Unexpectedly
 - Check stop condition logs
 - Verify all 9 output files are requested
-- Review morning report for details
+- Review final report for details
 
 ---
 

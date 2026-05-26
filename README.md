@@ -153,7 +153,7 @@ opencode
 ### Stage 9：验收报告
 - 综合所有结果
 - 列出未解决问题、阻断项
-- 生成 morning-report.md
+- 生成 final-report.md
 - 给出建议："建议人工审查" 或 "停止，原因：……"
 
 ---
@@ -185,7 +185,7 @@ opencode
 ├── code-review.md            # 质量评估
 ├── performance-review.md     # 性能稳定性评估
 ├── security-review.md        # 安全审查
-└── morning-report.md         # 综合报告与建议
+└── final-report.md         # 综合报告与建议
 ```
 
 ---
